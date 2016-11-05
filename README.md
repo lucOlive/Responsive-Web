@@ -6,7 +6,7 @@
 
 ###响应式概念
 
-响应式网站是一个多项技术构成的设计理念，实现利用一套代码，实现网站对不同分辨率，不同尺寸，不同类型的浏览终端自适应适配，并且在不同类型的终端上显示不同风格的设计。
+响应式网站是一个多项技术构成的设计理念，实现利用一套代码，实现网站对不同分辨率，不同尺寸，不同类型的浏览终端自适应适配，并且在不同类型的终端上显示不同风格的设计.
 
 ###响应式技术构成
 
@@ -17,8 +17,8 @@
 ###响应式网站的优点
 
 1. 减少工作量
-   - 网站、设计、代码、内容只需要一份
-   - 多出来的工作量只是JS脚本、CSS样式做一些改动
+   -网站、设计、代码、内容只需要一份
+   -多出来的工作量只是JS脚本、CSS样式做一些改动
 2. 节省时间
 3. 每个设备都能得到正确的设计
 4. 搜索优化
@@ -30,16 +30,18 @@
 2. 设计比较难精确定位和控制
 3. 老版本的浏览器兼容性不好
 
-### 1.5 Browser
+###Browser
 
 Browser market（china）[statcounter](http://gs.statcounter.com/]) 
 
 1. PC端国内主流浏览器：
+
    - Chrome浏览器（推荐开发者使用）
    - IE浏览器 8+ / Edge浏览器（市场份额逐渐下降）
    - Firefox浏览器
    - Safari浏览器
 2. 移动端国内主流浏览器：
+
    - Android Browser
    - Chrome浏览器
    - UC浏览器
@@ -59,15 +61,16 @@ CSS3：
 ```
 
 1. 逻辑操作符
-   - and：与，操作符左右都满足为真
-   - or：或，操作符左右有一个满足为真，可用逗号替代
-   - not：非，后跟的表达式，只对逗号或or以前的表达式有效，类似于括号
-     `例如：@media (not(screen and(colod))),print and (color){}`
-   - only：只有，防止老旧浏览器不兼容
-     `例如：@media = "only screen and（min-width:401px）and (max-width:600px)`
-     `等效于 @media = "only" //only后跟的所有样式都会失效，都不会显示`
-     `@media = "screen and（min-width:401px）and (max-width:600px)`
-     `等效于 @media = "screen" //screen后跟的所有逻辑操作符失效，都会显示该媒体查询内的样式`
+ -and：与，操作符左右都满足为真
+ -or：或，操作符左右有一个满足为真，可用逗号替代
+ -not：非，后跟的表达式，只对逗号或or以前的表达式有效，类似于括号
+    `例如：@media (not(screen and(colod))),print and (color){}`
+ -only：只有，防止老旧浏览器不兼容
+    `例如：@media = "only screen and（min-width:401px）and (max-width:600px)`
+    `等效于 @media = "only" //only后跟的所有样式都会失效，都不会显示`
+    `@media = "screen and（min-width:401px）and (max-width:600px)`
+    `等效于 @media = "screen" //screen后跟的所有逻辑操作符失效，都会显示该媒体查询内的样式`
+
 2. CSS3媒体属性简介
 
 - width：视口宽度
@@ -80,19 +83,14 @@ CSS3：
 - color：每种颜色的位数bits，如min-color:16位,8位
 - resolution：检测屏幕或打印机的分辨率，如min-resolution：300dpi
 
-\-
 
 ###viewport视口
 
 1.布局视口（layout viewport）
 
-![img](https://i.imgur.com/hOV60TG.png)
-
-布局视口为网页PC端版式，为默认布局模式下的页面显示大小
+ - 布局视口为网页PC端版式，为默认布局模式下的页面显示大小
 
 2.可视视口（visual viewport）
-
-![img](https://i.imgur.com/ac5ygtU.png)
 
 可视视口为手机端能看见PC端网页的显示大小，根据屏幕大小不同，显示大小也会不同
 
