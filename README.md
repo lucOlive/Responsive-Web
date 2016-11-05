@@ -36,17 +36,17 @@ Browser market（china）[statcounter](http://gs.statcounter.com)
 
 1. PC端国内主流浏览器：
 
-   - Chrome浏览器（推荐开发者使用）
-   - IE浏览器 8+ / Edge浏览器（市场份额逐渐下降）
-   - Firefox浏览器
-   - Safari浏览器
+ - Chrome浏览器（推荐开发者使用）
+ - IE浏览器 8+ / Edge浏览器（市场份额逐渐下降）
+ - Firefox浏览器
+ - Safari浏览器
 2. 移动端国内主流浏览器：
 
-   - Android Browser
-   - Chrome浏览器
-   - UC浏览器
-   - 腾讯X5内核浏览器（如微信、QQ、QQ空间、QQ浏览器）
-   - iOS Safari浏览器
+ - Android Browser
+ - Chrome浏览器
+ - UC浏览器
+ - 腾讯X5内核浏览器（如微信、QQ、QQ空间、QQ浏览器）
+ - iOS Safari浏览器
 
 ###媒体查询
 
@@ -61,16 +61,23 @@ CSS3：
 ```
 
 1. 逻辑操作符
- -and：与，操作符左右都满足为真
- -or：或，操作符左右有一个满足为真，可用逗号替代
- -not：非，后跟的表达式，只对逗号或or以前的表达式有效，类似于括号
-    `例如：@media (not(screen and(colod))),print and (color){}`
- -only：只有，防止老旧浏览器不兼容
-    `例如：@media = "only screen and（min-width:401px）and (max-width:600px)`
-    `等效于 @media = "only" //only后跟的所有样式都会失效，都不会显示`
-    `@media = "screen and（min-width:401px）and (max-width:600px)`
-    `等效于 @media = "screen" //screen后跟的所有逻辑操作符失效，都会显示该媒体查询内的样式`
 
+  ```
+ -and：与，操作符左右都满足为真
+ 
+ -or：或，操作符左右有一个满足为真，可用逗号替代
+ 
+ -not：非，后跟的表达式，只对逗号或or以前的表达式有效，类似于括号
+    `例如：@media (not(screen and(colod))),print and (color){}
+  ```  
+ -only：只有，防止老旧浏览器不兼容
+ 
+   ```
+    例如：@media = "only screen and（min-width:401px）and (max-width:600px)`
+    等效于 @media = "only" //only后跟的所有样式都会失效，都不会显示`
+    @media = "screen and（min-width:401px）and (max-width:600px)`
+    等效于 @media = "screen" //screen后跟的所有逻辑操作符失效，都会显示该媒体查询内的样式`
+    ```
 2. CSS3媒体属性简介
 
 - width：视口宽度
@@ -112,18 +119,22 @@ CSS3：
 ###响应式网站设计实践原则
 
 1. 开发模式
-  - progressive enhancement 渐进增强：先从较低版本，兼容性较差的浏览器开始开发，实现“能用”，再逐渐往上开发，增加效果，实现“好看”，此观念比较老旧
-  - graceful degradation 优雅降级：直接从最新版本的浏览器入手开发，之后做老旧浏览器的兼容性适配
+ - progressive enhancement 渐进增强：先从较低版本，兼容性较差的浏览器开始开发，实现“能用”，再逐渐往上开发，增加效果，实现“好看”，此观念比较老旧
+ - graceful degradation 优雅降级：直接从最新版本的浏览器入手开发，之后做老旧浏览器的兼容性适配
+
 2. PC端和手机端的优先原则
-  - 要根据网站的需求和性质来选择，主要面向手机端用户的网站要选择手机端优先
-  - 根据团队或个人的习惯来选择，没有对错，只有适合
+ - 要根据网站的需求和性质来选择，主要面向手机端用户的网站要选择手机端优先
+ - 根据团队或个人的习惯来选择，没有对错，只有适合
+
 3. 浏览器适配原则（优先chrome上调试）
-  - PC端：Chrome、Firefox、IE8+、Safari
-  - 手机端：Google Browas、Safari、QQ浏览器、UC浏览器、360浏览器
+ - PC端：Chrome、Firefox、IE8+、Safari
+ - 手机端：Google Browas、Safari、QQ浏览器、UC浏览器、360浏览器
+
 4. 内容显示原则
    -不管设备大小，内容可根据页面排版做部分修改，选择显示或隐藏
+
 5. 断点选择原则（具体断点选择和设计师交流）
-  - 0-480 小屏幕
-  - 481-800 中屏幕
-  - 801-1400 大屏幕
-  - 1400+ 巨屏幕
+ - 0-480 小屏幕
+ - 481-800 中屏幕
+ - 801-1400 大屏幕
+ - 1400+ 巨屏幕
